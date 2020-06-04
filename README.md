@@ -4,7 +4,7 @@ A sample Kubernetes service used in the [EKS Workshop](https://eksworkshop.com/)
 
 The Dockerfile is a [multi-stage](https://docs.docker.com/develop/develop-images/multistage-build/) build that
 compiles the Go application and then packages it in a minimal image that pulls from [scratch](https://hub.docker.com/_/scratch/).
-The size of this Docker image is ~ 3.2 MiB.
+The size of this Docker image is ~ 3.2 MiB.  k
 
 The buildspec.yml file is used by the [AWS CodeBuild](https://aws.amazon.com/codebuild/) stage. In this file, it pulls down
 kubectl, builds the container image, pushes the image to [Amazon ECR](https://aws.amazon.com/ecr/) and then deploys the change to the
